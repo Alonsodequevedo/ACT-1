@@ -3,33 +3,33 @@
 main()/*escribe diversas sec. de escape*/
 {
 setlocale(LC_ALL, "Spanish");
-	printf("primera generacion (1940-1950)\n");
-	printf("\n1.- Usaban valvula electronicas");
-	printf("\n2.-tenian un gran tamano y requerian mucha energia");
-	printf("\n3.-Se usaba diretamente lenguaje de maquina para programar");
+	printf("primera generación (1940-1950)\n");
+	printf("\n1.- Usaban valvula electrónicas");
+	printf("\n2.-tenian un gran tamano y requerian mucha energía");
+	printf("\n3.-Se usaba diretamente lenguaje de máquina para programar");
 	printf("\n ");
 
-	printf("\nsegunda geneacion (1950-1960)");
-	printf("\n1.-Se remplazo el uso de valvulas por transistores");
-	printf("\n2.-se disminuyo la cantidad de energia necesaria y el calor que producia");
-	printf("\n3.-Se empezo el uso de memorias de nucleo magnetico");
+	printf("\nsegunda geneación (1950-1960)");
+	printf("\n1.-Se remplazo el uso de válvulas por transistores");
+	printf("\n2.-se disminuyo la cantidad de energía necesaria y el calor que producia");
+	printf("\n3.-Se empezo el uso de memorias de núcleo magnético");
 	printf("\n ");
 	
-	printf("\nTercera generacion (1960-1970)");
+	printf("\nTercera generación (1960-1970)");
 	printf("\n1.-Se introdujo los primeros chips quee son circuitos itegrados");
 	printf("\n2.-S consiguio mayor velocidad y efciencia");
 	printf("\n3.-Se desarrollaron los lenguajes de alto nivel");
 	printf("\n ");
 	
-	printf("\nCuarta generacion (1970-1980)");
+	printf("\nCuarta generación (1970-1980)");
 	printf("\n1.-Se crearon chips mas poderosos");
 	printf("\n2.-Se redujo considerablemente el tamaño para una mayor portabilidad");
 	printf("\n3.-Mayor capacidad de almacenamieto");
 	printf("\n ");
 	
-	printf("\nQuinta generacion (1980-1990)");
-	printf("\n1.-Se emepezo a usar la computacion basada en inteligencia artificial");
-	printf("\n2.-Se impulso el desarrollo de las supercomputadoras");
+	printf("\nQuinta generación (1980-1990)");
+	printf("\n1.-Se emepezó a usar la computacion basada en inteligencia artificial");
+	printf("\n2.-Se impulsó el desarrollo de las supercomputadoras");
 	printf("\n3.-desarrollo de interfaces de usuario avanzadas");
 	return 0;
 }
