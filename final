@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <locale.h>
 main()/*escribe diversas sec. de escape*/
 {
+setlocale(LC_ALL, "Spanish");
 	printf("primera generacion (1940-1950)\n");
 	printf("\n1.- Usaban valvula electronicas");
 	printf("\n2.-tenian un gran tamano y requerian mucha energia");
