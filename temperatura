@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(){
+	
+	float celcius=5;
+	float farenheit=34;
+	
+	printf("5° celcius a farenheit");
+	printf(" = %f\n", (9/5.0)*celcius + 32);
+
+	return 0;
+}
