@@ -1,0 +1,52 @@
+//arbol para arriba y para abajo
+#include <stdio.h>
+
+int main() {
+	
+	int niveles;
+	
+	printf("Cuantos niveles quiere en su rombo? ");
+	scanf("%d", &niveles);
+	
+
+	if (niveles % 2 == 0) {
+		niveles++;
+		printf("Se ajusto el numero de niveles al numero impar siguiente (%d) .\n", niveles);
+	}
+
+	int espacios = niveles / 2;
+	int caracteres = 1;
+	int fila = 1;
+	
+	while (fila <= niveles) {
+		int espacioactual = 1;
+		
+		while (espacioactual <= espacios) {
+			printf(" ");
+			espacioactual++;
+		}
+		
+		int caracteractual = 1;
+		while (caracteractual <= caracteres) {
+			if (caracteractual <= caracteres / 2) {
+				printf("*");
+			} else {
+				printf("*");
+			}
+			caracteractual++;
+		}
+		printf("\n");
+		
+		if (fila <= niveles / 2) {
+			espacios--;
+			caracteres += 2;
+		}
+		else {
+			espacios++;
+			caracteres -= 2;
+		}
+		fila++;
+	}
+
+	return 0;
+}
