@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+	int numero=0, suma=0;
+	do{
+	
+		printf("dar un numero");
+		scanf("%d", &numero);
+		suma+=numero;
+	}
+	while(numero!=0);
+	printf("suma=%d", suma);
+	return 0;
+}
