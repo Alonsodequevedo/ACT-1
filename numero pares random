@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+int main(){
+	
+	int num;
+	srand(time(NULL));
+	int r;
+	int contador=1;
+	
+	printf("Digite la cantidad de numeros aleatorios:");
+	scanf("%d", &num);
+	
+	while(contador <= num){
+		
+		r = rand()% 51;
+		r = r*2;
+		
+		printf("cantidad %d: %d\n", contador, r);
+		contador++;
+	}
+	return 0;
+}
