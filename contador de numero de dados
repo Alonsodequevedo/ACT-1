@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int x = 0;
+    int y;
+    int sum = 0;
+    int numeroaleatorio;
+
+    printf("Cuantas veces quiere tirar su dado: ");
+    scanf("%d", &y);
+
+    srand(time(NULL));
+
+    int resultados[6] = {0};
+
+    while (x < y)
+    {
+        numeroaleatorio = rand() % 6 + 1;
+        printf("El numero de su dado es: %d\n", numeroaleatorio);
+        resultados[numeroaleatorio - 1]++; 
+        x++;
+        sum = numeroaleatorio + sum;
+    }
+
+    printf("\nResultados de los lanzamientos:\n");
+
+    int i = 0;
+    while (i < 6)
+    {
+        int contador = resultados[i];
+        printf("El numero %d aparecio %d veces.\n", i + 1, contador);
+        i++;
+    }
+
+    return 0;
+}
