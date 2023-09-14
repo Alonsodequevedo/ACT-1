@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main(){
+	
+	float num;
+	float i;
+	float suma=0;
+	float cantidad;
+	
+	printf("cuantos numero quiere calcular: ");
+	scanf("%f", &num);
+	for(i=1;i<=num;i++){
+		printf("numero:");
+		scanf("%f", &cantidad);
+		suma=suma+cantidad;
+	}
+	suma=suma/num;
+	printf("el promedio de su valores: %.2f\n", suma);
+	
+	return 0;
+}
