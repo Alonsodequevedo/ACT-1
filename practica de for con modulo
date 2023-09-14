@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+	
+	int x, suma=0;
+	for(x=1;x<=100;x++)
+	{
+		if(x%2==0){
+			printf("%d\n", x);
+			suma+=x;
+		}
+	}
+		printf("la suma es: %d\n", suma);
+	
+	
+	return 0;
+}
