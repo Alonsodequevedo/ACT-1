@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *file = fopen("input.csv", "r");
+
+    if (!file) {
+        fprintf(stderr, "No se pudo abrir el archivo\n");
+        return 1;
+    }
+
+    char buffer[1024];
+
+    // Leer filas y columnas
+    while (fgets(buffer, sizeof(buffer), file)) {
+        // Dividir la línea en columnas
+        char *token = strtok(buffer, ",");
+        while (token) {
+            printf("%s\t", token);
+            token = strtok(NULL, ",");
+        }
+        printf("\n");
+    }
+
+    fclose(file);
+
+    return 0;
+}
